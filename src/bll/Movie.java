@@ -1,4 +1,42 @@
 package bll;
 
 public class Movie {
+    private final int id;
+    private String name;
+    private int year;
+    private int rating = 0;
+
+    public Movie(int id, String name, int year){
+        this.id = id;
+        this.name = name;
+        this.year = year;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public int getRating() {
+        return rating;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
+    }
+
+    public void setRating(int rating) {
+        this.rating = rating;
+    }
 }
