@@ -1,12 +1,17 @@
 package bll;
 
+import javax.swing.plaf.multi.MultiViewportUI;
+
 public class Movie {
-    private final int id;
+    private int id;
     private String name;
     private int year;
     private int rating = 0;
 
-    public Movie(int id, String name, int year){
+    public Movie() {
+    }
+
+    public Movie(int id, String name, int year) {
         this.id = id;
         this.name = name;
         this.year = year;
@@ -26,6 +31,10 @@ public class Movie {
 
     public int getYear() {
         return year;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public void setName(String name) {
