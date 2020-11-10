@@ -17,6 +17,11 @@ public class Movie {
         this.year = year;
     }
 
+    public Movie(String name, int year) {
+        this.name = name;
+        this.year = year;
+    }
+
     public String getName() {
         return name;
     }
