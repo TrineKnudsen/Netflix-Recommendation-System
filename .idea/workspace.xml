@@ -20,10 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="299bb227-29ab-41b5-bfba-1e1f8794fb3d" name="Default Changelist" comment="Model added">
+      <change afterPath="$PROJECT_DIR$/src/dal/Rating.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dal/dao/RatingDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dal/dao/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/sample.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Netflix-Recommendation-System/GUI/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Netflix-Recommendation-System/GUI/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Netflix-Recommendation-System/GUI/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Netflix-Recommendation-System/GUI/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bll/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dal/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bll/MovieDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dal/dao/MovieDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bll/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dal/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bll/util/MessageBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dal/util/MessageBox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bll/util/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dal/util/Reader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,22 +167,26 @@
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="428" y="202" key="FileChooserDialogImpl/0.0.1440.920@0.0.1440.920" timestamp="1604995433019" />
-    <state width="698" height="236" key="GridCell.Tab.0.bottom" timestamp="1604956448355">
-      <screen x="0" y="0" width="1440" height="920" />
+    <state width="1638" height="264" key="GridCell.Tab.0.bottom" timestamp="1605006175713">
+      <screen x="0" y="23" width="1680" height="977" />
     </state>
     <state width="698" height="236" key="GridCell.Tab.0.bottom/0.0.1440.920@0.0.1440.920" timestamp="1604956448355" />
-    <state width="698" height="236" key="GridCell.Tab.0.center" timestamp="1604956448355">
-      <screen x="0" y="0" width="1440" height="920" />
+    <state width="1638" height="264" key="GridCell.Tab.0.bottom/0.23.1680.977@0.23.1680.977" timestamp="1605006175713" />
+    <state width="1638" height="264" key="GridCell.Tab.0.center" timestamp="1605006175712">
+      <screen x="0" y="23" width="1680" height="977" />
     </state>
     <state width="698" height="236" key="GridCell.Tab.0.center/0.0.1440.920@0.0.1440.920" timestamp="1604956448355" />
-    <state width="698" height="236" key="GridCell.Tab.0.left" timestamp="1604956448355">
-      <screen x="0" y="0" width="1440" height="920" />
+    <state width="1638" height="264" key="GridCell.Tab.0.center/0.23.1680.977@0.23.1680.977" timestamp="1605006175712" />
+    <state width="1638" height="264" key="GridCell.Tab.0.left" timestamp="1605006175712">
+      <screen x="0" y="23" width="1680" height="977" />
     </state>
     <state width="698" height="236" key="GridCell.Tab.0.left/0.0.1440.920@0.0.1440.920" timestamp="1604956448355" />
-    <state width="698" height="236" key="GridCell.Tab.0.right" timestamp="1604956448355">
-      <screen x="0" y="0" width="1440" height="920" />
+    <state width="1638" height="264" key="GridCell.Tab.0.left/0.23.1680.977@0.23.1680.977" timestamp="1605006175712" />
+    <state width="1638" height="264" key="GridCell.Tab.0.right" timestamp="1605006175713">
+      <screen x="0" y="23" width="1680" height="977" />
     </state>
     <state width="698" height="236" key="GridCell.Tab.0.right/0.0.1440.920@0.0.1440.920" timestamp="1604956448355" />
+    <state width="1638" height="264" key="GridCell.Tab.0.right/0.23.1680.977@0.23.1680.977" timestamp="1605006175713" />
     <state x="351" y="215" key="MultipleFileMergeDialog" timestamp="1604993956884">
       <screen x="0" y="0" width="1440" height="920" />
     </state>

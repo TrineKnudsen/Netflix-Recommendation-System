@@ -1,6 +1,7 @@
-package bll;
+package dal.dao;
 
-import bll.util.Reader;
+import dal.Movie;
+import dal.util.Reader;
 
 import java.util.ArrayList;
 import java.util.List;
