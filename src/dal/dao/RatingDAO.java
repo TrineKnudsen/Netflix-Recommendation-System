@@ -19,7 +19,7 @@ public class RatingDAO extends Reader {
     @Override
     public void saveFile() {
         for (var rating : ratings)
-            outputLines.add(String.format("%d,%s", rating.getUserId(), rating.getRating()));
+            outputLines.add(String.format("%d,%d,%d", rating.getMovieId(), rating.getUserId(), rating.getRating()));
 
         super.saveFile();
     }
