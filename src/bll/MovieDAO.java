@@ -9,10 +9,18 @@ public class MovieDAO extends Reader {
 
     protected List<Movie> movies = new ArrayList<>();
 
+    @Override
     public void loadFile(String path) {
         super.loadFile(path);
         parseMovies();
+    }
 
+    @Override
+    public void saveFile() {
+        for (var movie : movies)
+            outputLines.add(String.format("%d,%d,%s", movie.getId(), movie.getYear(), movie.getName()));
+
+        super.saveFile();
     }
 
     public void parseMovies() {
@@ -28,7 +36,6 @@ public class MovieDAO extends Reader {
                 result.setId(movie_id);
                 result.setName(movie_name);
                 result.setYear(movie_year);
-
             }
         }
     }
@@ -42,8 +49,10 @@ public class MovieDAO extends Reader {
     }
 
     public void addMovie(String name, int year) {
-        if (!name.isEmpty() && year > 0)
-            movies.add(new Movie(name, year));
+        if (!name.isEmpty() && year > 0) {
+            int new_id = movies.size() + 1;
+            movies.add(new Movie(new_id, name, year));
+        }
     }
 
     public void removeMovie(String name) {

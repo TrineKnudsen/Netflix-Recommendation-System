@@ -7,8 +7,8 @@ import java.util.List;
 
 public class Reader {
     private File inputFile;
-    private List<String> inputLines;
-    private List<String> outputLines;
+    protected List<String> inputLines;
+    protected List<String> outputLines;
 
     public void loadFile(String path) {
         File file = new File(path);

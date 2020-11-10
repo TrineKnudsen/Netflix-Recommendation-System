@@ -1,0 +1,77 @@
+Index: src/GUI/sample.fxml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?import javafx.geometry.Insets?>\r\n<?import javafx.scene.layout.GridPane?>\r\n\r\n<?import javafx.scene.control.Button?>\r\n<?import javafx.scene.control.Label?>\r\n<GridPane fx:controller=\"GUI.Controller\"\r\n          xmlns:fx=\"http://javafx.com/fxml\" alignment=\"center\" hgap=\"10\" vgap=\"10\">\r\n</GridPane>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/GUI/sample.fxml	(revision b185447e94a62f406d58bdb3ed2d9db9407990b5)
++++ src/GUI/sample.fxml	(date 1604918764104)
+@@ -1,8 +1,11 @@
+-<?import javafx.geometry.Insets?>
+-<?import javafx.scene.layout.GridPane?>
++<?xml version="1.0" encoding="UTF-8"?>
++
++<?import javafx.scene.control.ListView?>
++<?import javafx.scene.layout.AnchorPane?>
+ 
+-<?import javafx.scene.control.Button?>
+-<?import javafx.scene.control.Label?>
+-<GridPane fx:controller="GUI.Controller"
+-          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+-</GridPane>
+\ No newline at end of file
++
++<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
++   <children>
++      <ListView fx:id="moviesList" prefHeight="400.0" prefWidth="600.0" />
++   </children>
++</AnchorPane>
+Index: src/GUI/Controller.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package GUI;\r\n\r\npublic class Controller {\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/GUI/Controller.java	(revision b185447e94a62f406d58bdb3ed2d9db9407990b5)
++++ src/GUI/Controller.java	(date 1604918832964)
+@@ -1,4 +1,15 @@
+ package GUI;
+ 
++import bll.Movie;
++import javafx.fxml.FXML;
++import javafx.scene.control.ListView;
++
+ public class Controller {
++
++    @FXML
++    private ListView<Movie> moviesList;
++
++    
++
++
+ }
+Index: src/GUI/MovieModel.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/GUI/MovieModel.java	(date 1604918687526)
++++ src/GUI/MovieModel.java	(date 1604918687526)
+@@ -0,0 +1,15 @@
++package GUI;
++
++import bll.Movie;
++import javafx.collections.FXCollections;
++import javafx.collections.ObservableArray;
++import javafx.collections.ObservableList;
++
++public class MovieModel {
++
++    private ObservableList<Movie> movies = FXCollections.observableArrayList();
++
++    public ObservableList<Movie> getMovies() {
++        return movies;
++    }
++}

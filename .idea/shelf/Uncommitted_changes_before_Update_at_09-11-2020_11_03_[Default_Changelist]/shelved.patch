@@ -1,0 +1,42 @@
+Index: src/sample/Controller.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package sample;\r\n\r\npublic class Controller {\r\n}\r\n
+===================================================================
+--- src/sample/Controller.java	(revision 638894ee6722f1ea6dfd63a674f8b768c334a82c)
++++ src/GUI/Controller.java	(date 1604916163646)
+@@ -1,4 +1,4 @@
+-package sample;
++package GUI;
+ 
+ public class Controller {
+ }
+Index: src/sample/sample.fxml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?import javafx.geometry.Insets?>\r\n<?import javafx.scene.layout.GridPane?>\r\n\r\n<?import javafx.scene.control.Button?>\r\n<?import javafx.scene.control.Label?>\r\n<GridPane fx:controller=\"sample.Controller\"\r\n          xmlns:fx=\"http://javafx.com/fxml\" alignment=\"center\" hgap=\"10\" vgap=\"10\">\r\n</GridPane>
+===================================================================
+--- src/sample/sample.fxml	(revision 638894ee6722f1ea6dfd63a674f8b768c334a82c)
++++ src/GUI/sample.fxml	(date 1604916163658)
+@@ -3,6 +3,6 @@
+ 
+ <?import javafx.scene.control.Button?>
+ <?import javafx.scene.control.Label?>
+-<GridPane fx:controller="sample.Controller"
++<GridPane fx:controller="GUI.Controller"
+           xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+ </GridPane>
+\ No newline at end of file
+Index: src/sample/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package sample;\r\n\r\n\r\nimport javafx.application.Application;\r\nimport javafx.fxml.FXMLLoader;\r\nimport javafx.scene.Parent;\r\nimport javafx.scene.Scene;\r\nimport javafx.stage.Stage;\r\n\r\npublic class Main extends Application {\r\n\r\n    @Override\r\n    public void start(Stage primaryStage) throws Exception{\r\n        Parent root = FXMLLoader.load(getClass().getResource(\"sample.fxml\"));\r\n        primaryStage.setTitle(\"Hello World\");\r\n        primaryStage.setScene(new Scene(root, 300, 275));\r\n        primaryStage.show();\r\n    }\r\n\r\n\r\n    public static void main(String[] args) {\r\n        launch(args);\r\n    }\r\n}\r\n
+===================================================================
+--- src/sample/Main.java	(revision 638894ee6722f1ea6dfd63a674f8b768c334a82c)
++++ src/GUI/Main.java	(date 1604916163653)
+@@ -1,4 +1,4 @@
+-package sample;
++package GUI;
+ 
+ 
+ import javafx.application.Application;
