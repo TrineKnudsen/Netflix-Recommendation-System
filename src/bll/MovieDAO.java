@@ -50,7 +50,7 @@ public class MovieDAO extends Reader {
 
     public void addMovie(String name, int year) {
         if (!name.isEmpty() && year > 0) {
-            int new_id = movies.size();
+            int new_id = movies.size() + 1;
             movies.add(new Movie(new_id, name, year));
         }
     }
