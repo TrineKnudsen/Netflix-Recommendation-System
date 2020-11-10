@@ -20,22 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="299bb227-29ab-41b5-bfba-1e1f8794fb3d" name="Default Changelist" comment="Model added">
-      <change afterPath="$PROJECT_DIR$/lib/javafx-base-16-ea+4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-controls-16-ea+4-win.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-controls-16-ea+4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-fxml-16-ea+4-win.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-fxml-16-ea+4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-graphics-16-ea+4-win.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-graphics-16-ea+4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Data/movie_titles.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Data/ratings.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Data/users.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Netflix-Recommendation-System/GUI/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Netflix-Recommendation-System/GUI/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Netflix-Recommendation-System/GUI/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Netflix-Recommendation-System/GUI/sample.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bll/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bll/Movie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bll/MovieDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bll/MovieDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bll/util/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bll/util/Reader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/sample.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,14 +65,6 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="GUI.Main" />
-      <module name="Netflix-Recommendation-System" />
-      <option name="VM_PARAMETERS" value="--module-path ${PATH_TO_FX} --add-modules javafx.controls,javafx.fxml --add-exports javafx.graphics/com.sun.javafx.sg.prism=ALL-UNNAMED" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -92,6 +72,14 @@
         </value>
       </option>
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="gui.Main" />
+      <module name="Netflix-Recommendation-System" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;lib&quot; --add-modules javafx.controls,javafx.fxml --add-exports javafx.graphics/com.sun.javafx.sg.prism=ALL-UNNAMED" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -157,14 +145,16 @@
     <option name="LAST_COMMIT_MESSAGE" value="Model added" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="176" y="116" width="1089" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604915599158">
-      <screen x="0" y="0" width="1440" height="920" />
+    <state x="205" y="146" width="1271" height="782" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605005944119">
+      <screen x="0" y="23" width="1680" height="977" />
     </state>
     <state x="176" y="116" width="1089" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.920@0.0.1440.920" timestamp="1604915599158" />
-    <state x="451" y="263" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1604915169600">
-      <screen x="0" y="0" width="1440" height="920" />
+    <state x="205" y="146" width="1271" height="782" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.977@0.23.1680.977" timestamp="1605005944119" />
+    <state x="526" y="302" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1605005930601">
+      <screen x="0" y="23" width="1680" height="977" />
     </state>
     <state x="451" y="263" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1440.920@0.0.1440.920" timestamp="1604915169600" />
+    <state x="526" y="302" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1680.977@0.23.1680.977" timestamp="1605005930601" />
     <state x="428" y="202" key="FileChooserDialogImpl" timestamp="1604995433019">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
