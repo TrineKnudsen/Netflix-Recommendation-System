@@ -1,7 +1,5 @@
 package bll;
 
-import javax.swing.plaf.multi.MultiViewportUI;
-
 public class Movie {
     private int id;
     private String name;

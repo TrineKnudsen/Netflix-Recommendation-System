@@ -43,6 +43,7 @@ public class Reader {
         }
     }
 
+
     public List<String> getInputLines() {
         return inputLines;
     }

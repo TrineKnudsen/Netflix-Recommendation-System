@@ -4,7 +4,7 @@ import bll.util.Reader;
 
 public class MovieDAO extends Reader {
 
-    public Movie getMove(int id) {
+    public Movie getMovie(int id) {
         Movie result = new Movie();
         for (String str : getInputLines()) {
             var split = str.split(",");
@@ -22,7 +22,6 @@ public class MovieDAO extends Reader {
                     return result;
             }
         }
-
         return null;
     }
 }
